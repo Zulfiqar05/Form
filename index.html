@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  body{
+    background-image: url(https://images.unsplash.com/photo-1419640303358-44f0d27f48e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=785&q=80);
+  }
+  </style>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var inputValue = document.getElementById('name').value;
+        var dateofbirth = document.getElementById('dob').value;
+        alert('Input value: ' + inputValue + dateofbirth) ;
+      });
+    });
+  </script>
+</head> 
+
+<body>
+   
+  <div class="container mt-4">
+    <h1 class="text-center" style="color: azure;">Resume</h1>
+  
+
+    <form id="myForm">
+      <div class="form-group">
+        <label for="name" style="color: azure;">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="dob" style="color: azure;" >Date of Birth</label>
+          <input type="date" class="form-control" id="dob">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cnic" style="color: azure;" >CNIC</label>
+          <input type="number" class="form-control" id="cnic" placeholder="Enter your CNIC number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" style="color: azure;" >Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label for="phone" style="color: azure;" >Phone Number</label>
+        <input type="number" class="form-control" id="phone" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="address" style="color: azure;" >Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+      </div>
+
+      <hr>
+
+      <h3 class="mb-3">Education Information</h3>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="degree1" style="color: azure;" >Degree 1</label>
+          <input type="text" class="form-control" id="degree1" placeholder="Enter your degree">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="institute1" style="color: azure;" >Institute 1</label>
+          <input type="text" class="form-control" id="institute1" placeholder="Enter the institute's name">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="degree2" style="color: azure;" >Degree 2</label>
+          <input type="text" class="form-control" id="degree2" placeholder="Enter your degree">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="institute2" style="color: azure;" >Institute 2</label>
+          <input type="text" class="form-control" id="institute2" placeholder="Enter the institute's name">
+      </div>
+      <div>
+        <button type="submit"  >Submit</button>
+      </div>
+    </form>
+  </div>
+
+  
+</body>
+
+</html>
